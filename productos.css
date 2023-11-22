@@ -1,0 +1,144 @@
+
+:root {
+  --color-primary: #50658f;
+  --color-blanco: #f9f9f9;
+  --color-terciario: #5d75d4;
+  --color-negro: #000001;
+  --color-secondary-dark: #2b752e;
+  --color-secondary: #1c2b41;
+  --color-gris-oscuro: #333;
+  --color-gris: #cedaea;
+  --color-rojo: #d32b2b;
+
+  --font-family: 'Arial', sans-serif;
+
+}
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  padding-block: 40px;
+}
+
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid var(--color-gris);
+  border-radius: 8px;
+  background-color: var(--color-blanco);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color:var(--color-terciario);
+  color:var(--color-blanco);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+header {
+  background-color: #333;
+  color:var(--color-blanco);
+  padding: 10px;
+  text-align: center;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: var();
+}
+
+th, td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 15px;
+}
+
+th {
+  background-color:var(--color-terciario);
+  color:var(--color-blanco);
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.options a{ 
+ display: block; 
+}
+@media (width >= 768px){
+  .options {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+
+.options a {
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 7px;
+  font-weight: bold;
+  color: var(--color-blanco);
+}
+
+.btn_eliminar
+{
+  background-color: var(--color-rojo);
+}
+
+.btn_actualizar 
+{
+  background-color: var(--color-secondary-dark);
+}
+
+.options a:hover {
+  background-color:var(--color-terciario);
+  color:var(--color-blanco);
+}
+
+
+.lista_productos {
+  margin-top: 4rem;
+ 
+}
+
+.lista_productos h2 {
+ text-align: center;
+ font-weight: bold;
+ font-size: 40px;
+}
+
+.btns_product
+{
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,121 @@
+
+:root {
+  --color-primary: #3498db;
+  --color-blanco: #fff;
+  --color-negro: #000;
+  --color-secondary-dark: #2b752e;
+  --color-secondary: #4caf50;
+  --color-gris: ##333;
+  --font-family: 'Arial', sans-serif;
+
+}
+
+
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--color-gris);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background-color: var(--color-blanco);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+}
+
+h2 {
+  color:var(--color-gris) ;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  color: var(--color-gris);
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+ background-color: var(--color-secondary);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+button:hover {
+  background-color:var(--color-secondary-dark);
+}
+a
+{
+  text-decoration: none;
+}
+
+p {
+  text-align: center;
+  color: #555;
+}
+
+/* Styling specific to the Recover Password form */
+#email {
+  margin-top: 5px;
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 400px) {
+  form {
+      width: 90%;
+  }
+}
+
+.form
+{
+  
+}
+
+.form_legend
+{
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-secondary-dark);
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top:3rem ;
+  margin-bottom:2.5rem ;
+  padding-bottom: 5px;
+  /* border-bottom: 2px solid var(--color-negro); */
+
+
+}
+
+
+.nav_form
+{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_form a{
+  color: var(--color-gris);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="inventario.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  
+  <title>Pedidos</title>
+</head>
+<body>
+  <header>
+    <h1>Inventario <i class="bi bi-text-indent-left"></i></h1>
+  </header>
+
+<section class="inventario_lista">
+
+  <h2>Productos</h2>
+    <ul>
+      <li>
+        <span>Jabón</span>
+        <span>Cantidad: 10</span>
+        <span>Precio: $19.99</span>
+        <span> <i class="bi bi-info-circle-fill"></i></span>
+      </li>
+      <li>
+        <span>Escobas</span>
+        <span>Cantidad: 5</span>
+        <span>Precio: $24.99</span>
+        <span> <i class="bi bi-info-circle-fill"></i></span>
+      </li>
+      <!-- Agrega más elementos según sea necesario -->
+    </ul>
+</section >
+
+
+ <div class="main">
+   <form>
+     <h2>Agregar Producto al Inventario</h2>
+     <label for="nombreProducto">Nombre del Producto:</label>
+     <input type="text" id="nombreProducto" name="nombreProducto" placeholder="Ingrese el nombre del producto" required>
+  
+     <label for="cantidadProducto">Cantidad:</label>
+     <input type="number" id="cantidadProducto" name="cantidadProducto" placeholder="Ingrese la cantidad" required>
+  
+     <label for="precioProducto">Precio:</label>
+     <input type="text" id="precioProducto" name="precioProducto" placeholder="Ingrese el precio" required>
+  
+     <button type="submit">Agregar al Inventario <i class="bi bi-send-check"></i></button>
+   </form>
+  
+ </div>
+</body>
+</html>

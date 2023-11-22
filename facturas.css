@@ -1,0 +1,109 @@
+
+:root {
+  --color-primary: #50658f;
+  --color-blanco: #f9f9f9;
+  --color-terciario: #5d75d4;
+  --color-negro: #000001;
+  --color-secondary-dark: #2b752e;
+  --color-secondary: #1c2b41;
+  --color-gris-oscuro: #333;
+  --color-gris: #cedaea;
+  --color-rojo: #d32b2b;
+
+  --font-family: 'Arial', sans-serif;
+
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #333;
+  color:var(--color-blanco);
+  padding: 30px;
+  text-align: center;
+}
+
+
+
+form {
+  margin-bottom:30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color:var(--color-terciario);
+  color:var(--color-blanco);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+select {
+  padding: 10px;
+  padding-left:20px ;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para opciones al hacer hover */
+option:hover {
+  background-color: #f5f5f5;
+}
+
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.main
+{
+  margin: 0 auto;
+  width: 85%;
+  max-width: 1100px;
+  padding-block:40px ;
+}
+
+@media (width >= 768px){
+   .main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+   }
+}
+
+.form_campo{
+  margin-bottom: 10px;
+}
+
+.campo_flex
+{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.form {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: var(--color-blanco);
+}
