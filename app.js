@@ -8,37 +8,38 @@ let form =  document.querySelector('#form_sesion');
 form.addEventListener('submit', function(e) {
   
   e.preventDefault();
-  let inputs = document.querySelector('#form_sesion input');
+//   let inputs = document.querySelector('#form_sesion input');
 
 
-    if(!validarCampos(inputs)){
-      let password = document.querySelector('#form_sesion #password').value;
-      let email = document.querySelector('#form_sesion #email').value;
-      console.log(email.value)
+//     if(!validarCampos(inputs)){
+//       let password = document.querySelector('#form_sesion #password').value;
+//       let email = document.querySelector('#form_sesion #email').value;
+//       console.log(email.value)
 
-      email= email.toLowerCase();
-      if(email=='prueba@gmail.com' )
-      {
-        if( password!=='123'){
-        alert('contraseña incorrecta')
-        return;
-        }
+//       email= email.toLowerCase();
+//       if(email=='prueba@gmail.com' )
+//       {
+//         if( password!=='123'){
+//         alert('contraseña incorrecta')
+//         return;
+//         }
       window.location.href = 'panel.html';
-        // Redirecciona a una nueva página
+//         // Redirecciona a una nueva página
 
-      }
-      else{
-        alert('usuario no existe')
-      }
-    }
-    else{
-      alert('campos vacios')
-    }
+//       }
+//       else{
+//         alert('usuario no existe')
+//       }
+//     }
+//     else{
+//       alert('campos vacios')
+//     }
   
   
 });
 
 });
+
 
 
 function validarCampos(inputs){
